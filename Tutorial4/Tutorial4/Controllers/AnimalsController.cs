@@ -9,7 +9,7 @@ namespace Tutorial4.Controllers;
 // [Route("[controller]")]
 public class AnimalsController : ControllerBase
 {
-    private List<Animal> _animals = new MockDb().Animals;
+    private List<Animal> _animals = new MockDbAnimals().Animals;
     [HttpGet]
     public IActionResult GetAnimals()
     {

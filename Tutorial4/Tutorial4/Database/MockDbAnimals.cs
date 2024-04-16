@@ -2,11 +2,11 @@
 
 namespace Tutorial4.Database;
 
-public class MockDb
+public class MockDbAnimals
 {
     public List<Animal> Animals { get; set; } = new List<Animal>();
 
-    public MockDb()
+    public MockDbAnimals()
     {
         Animals.Add(new Animal(){Id = 1, Name = "Azor", Category= "Mamoth", Mass  = 1000, Color = "Blue"});
         Animals.Add(new Animal(){Id = 2, Name="Mal", Category="Snake",  Mass  = 0.5, Color = "Yellow"});
