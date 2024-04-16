@@ -22,9 +22,19 @@ public static class AnimalEndpoints
             return Results.Ok(id);
         });
 
-        app.MapPost("/animals", (Animal animal) =>
+        app.MapPost("/animals/Add", (Animal animal) =>
         {
             return Results.Created("", animal);
+        });
+
+        app.MapDelete("/animal/Remove", (int id) =>
+        {
+            return Results.NoContent();
+        });
+
+        app.MapPut("/animal/Put", (int id) =>
+        {
+            return Results.NoContent();
         });
     }
 }
